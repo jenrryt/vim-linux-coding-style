@@ -23,7 +23,7 @@ set wildignore+=*.ko,*.mod.c,*.order,modules.builtin
 augroup linuxsty
     autocmd!
 
-    autocmd FileType c,cpp call s:LinuxConfigure()
+    autocmd FileType c,cpp,dts call s:LinuxConfigure()
     autocmd FileType diff,kconfig setlocal tabstop=8
 augroup END
 
